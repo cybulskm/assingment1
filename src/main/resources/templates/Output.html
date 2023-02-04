@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>OUTPUT</title>
+  <link rel="stylesheet" href="../static/main.css" th:href="@{css/main.css}">
+  <link rel="stylesheet" href="../static/footer.css" th:href="@{css/footer.css}">
 </head>
 <body>
+<main>
+  <h1>YOUR PRIZE IS.....</h1>
+  <h2 th:text="${message}">${message}JAVA FILL IN PLEASE</h2>
 
+  <p>
+    <a th:href="@{gift-reveal}" href="gift_reveal.html"><img src="https://gifdb.com/images/high/green-box-spinning-in-colorful-background-r2a2miosu7fhid83.webp" alt="/prize_box.webp"  style=" height: 400px; width:400px; text-align: left"></a>
+
+  </p>
+  <h2 style="text-align: right">${taunt}WOW ... JAVA WILL DECIDE HOW COOL THIS IS</h2>
+  <a style="align-self: end" href="../static/other-gifts.html">SEE NEXT PRIZES>>>></a>
+</main>
+<footer>
+  Matthew Cybulski &#128536<span class='hart'>&#9825;</span>&nbsp;&nbsp;2023
+</footer>
 </body>
 </html>
